@@ -28,7 +28,7 @@ function App() {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Navbar */}
       <div className="flex items-center justify-between px-4 py-3 bg-gray-800 shadow-md sticky top-0 z-50">
-        <div className="text-xl font-bold text-red-500">YouTube-clone</div>
+        <div className="text-xl font-bold text-red-400">YouTube-clone</div>
       </div>
 
       <div className="max-w-7xl mx-auto p-4">

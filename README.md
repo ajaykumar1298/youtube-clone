@@ -1,17 +1,71 @@
-# React + Vite
+🎬 YouTube Clone (Video Listing App)
+A responsive YouTube-style video listing application built using React.js and Axios.
+This app fetches video data from a public API and displays it in a grid layout similar to a real video browsing platform.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+-Fetch videos from API
+-YouTube-style video cards (thumbnail, title, channel, date)
+-Pagination (Next / Previous)
+-Loading state handling
+-Modern UI with Tailwind CSS
+-Fully responsive layout
+-Smooth hover animations
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+-Frontend: React.js (Hooks)
+-HTTP Client: Axios
+-Styling: Tailwind CSS
+-API: FreeAPI YouTube Videos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📂 Project Structure
+src/
+│── App.jsx
+│── main.jsx
+│── index.css
 
-## React Compiler
+⚙️ Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.Clone the repository
+git clone https://github.com/your-username/youtube-clone.git
+cd youtube-clone
 
-## Expanding the ESLint configuration
+2.Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# youtube-clone" 
+3.Run the project
+npm run dev
+
+🔗 API Endpoint
+https://api.freeapi.app/api/v1/public/youtube/videos?page=1
+
+
+🔄 Pagination Logic
+-Uses page state to manage current page
+-Fetches new data whenever page changes
+-Prev/Next buttons are disabled when:
+    -No previous page
+    -No next page
+    -While loading
+
+🧠 Concepts Used
+-React Hooks (useState, useEffect)
+-API integration using Axios
+-Conditional rendering
+-Optional chaining (?.)
+-Responsive UI design with Tailwind CSS
+
+📌 Future Improvements
+-Search functionality
+-Video player on click
+-Like / Save videos
+-Category filters
+-Infinite scrolling (like real YouTube)
+
+
+👨‍💻 Author
+Ajay Kumar
+
+
+⭐ Support
+If you like this project, give it a ⭐ on GitHub!
+
